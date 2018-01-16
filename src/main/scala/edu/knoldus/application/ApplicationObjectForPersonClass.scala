@@ -12,15 +12,26 @@ object ApplicationObjectForPersonClass extends App {
 
   val initialMap = Map("Scala" -> 3, "Java" -> 4, "C" -> 11, "Kafka" -> 6)
 
-  val obj = Blogger(initialMap)
-  logger.info(obj.writeBlog)
+  val bloggerObject = Blogger(initialMap)
+  logger.info(bloggerObject.writeBlog)
 
-/*
+  val gamerObject = Gamer("Shubham")
+  val trainerObject = Trainer("Prabhat")
+
+
+
+
   def response(person: Person): String = {
     person match {
       case gameObj@Gamer(person) => gameObj.rollDice
       case trainer@Trainer(person) => trainer.takeAttendence
-      case Blogger(person) =>
+      case blogger@Blogger(person) => blogger.writeBlog
     }
-  }*/
+  }
+
+
+  response(gamerObject)
+  response(trainerObject)
+  response(bloggerObject)
+
 }

@@ -8,8 +8,8 @@ case class Trainer(name: String) extends Person{
     val random = new Random()
     val strength = random.nextInt(totalStrength)
     strength match {
-      case n if n == 0 => s"All students are absent today\n"
-      case n if n > 0 => s"$n students are present today\n"
+      case n if n == 0 => s"Hello ${this.name}!! All students are absent today\n"
+      case n if n > 0 => s"Hello ${this.name}!! $n students are present today\n"
       case n if n < 0 => takeAttendence
     }
 
