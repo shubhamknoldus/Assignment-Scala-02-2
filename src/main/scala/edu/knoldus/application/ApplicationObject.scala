@@ -4,7 +4,7 @@ import edu.knoldus.operation.tiffinpayemnt.paymentclasses.{CardPayment, Cash, Ne
 import edu.knoldus.operation.tiffinpayemnt.tiffin.MakePaymentForTiffin
 import org.apache.log4j.Logger
 
-object ApplicationObject extends App{
+object ApplicationObject extends App {
 
 
   val amount1 = 23

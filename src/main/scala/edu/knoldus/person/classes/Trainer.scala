@@ -2,8 +2,8 @@ package edu.knoldus.person.classes
 
 import scala.util.Random
 
-case class Trainer(name: String) extends Person{
-  def takeAttendence :String ={
+case class Trainer(name: String) extends Person {
+  def takeAttendence: String = {
     val totalStrength = 50
     val random = new Random()
     val strength = random.nextInt(totalStrength)

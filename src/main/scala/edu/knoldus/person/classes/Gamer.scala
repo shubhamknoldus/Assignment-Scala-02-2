@@ -2,7 +2,7 @@ package edu.knoldus.person.classes
 
 import java.util.Random
 
-case class Gamer(name: String) extends Person{
+case class Gamer(name: String) extends Person {
 
   def rollDice: String = {
     rollDiceHelper(0)
@@ -14,7 +14,7 @@ case class Gamer(name: String) extends Person{
     rn.nextInt(max) + 1
   }
 
-  private def checkDice: Boolean ={
+  private def checkDice: Boolean = {
     if (returnDiceFace() == 1 || returnDiceFace() == 6) {
       true
     } else {
